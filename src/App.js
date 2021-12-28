@@ -1,9 +1,14 @@
 import './App.css'
+import Nav from './components/Nav/Nav'
+import Body from './components/Body/Body'
 function App() {
   return (
     <>
       <div className='app'>
-        <div className='mx-auto w-48'>K1 de ultimate</div>
+        <Nav />
+        <Body title='' />
+        <Body title='Nigerian Music' isLarge />
+        <Body title='Evergreen Music' isLarge />
       </div>
     </>
   )
