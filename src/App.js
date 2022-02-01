@@ -1,14 +1,14 @@
 import './App.css'
-import Nav from './components/Nav/Nav'
+import Header from './components/Header/Header'
 import Body from './components/Body/Body'
+import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
       <div className='app'>
-        <Nav />
-        <Body title='' />
-        <Body title='Nigerian Music' isLarge />
-        <Body title='Evergreen Music' isLarge />
+        <Header />
+        <Body />
+        <Footer />
       </div>
     </>
   )
