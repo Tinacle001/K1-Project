@@ -1,0 +1,113 @@
+header {
+  position: absolute;
+  width: 1350px;
+  height: 707px;
+  left: 0px;
+  top: 0px;
+  background: url('../../img/6.jpg') #652b9180;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background: rgba(101, 43, 145, 0.5); */
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 50vw #652b9180;
+}
+.signin_btn {
+  background: #ffffff;
+  border-radius: 5.90278px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17.7083px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #652b91;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.header_content {
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  align-items: center;
+  justify-content: center;
+  row-gap: 40px;
+}
+.header_text {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0.05em;
+}
+.header_input {
+  /* position: absolute; */
+  width: 578px;
+  height: 75px;
+  font-size: 20px;
+  padding: 20px;
+  /* left: 221px;
+  top: 443px; */
+
+  background: #ffffff;
+}
+.header_btn {
+  width: 277px;
+  height: 75px;
+  font-size: 30px;
+  background: #652b91;
+}
+.header_icon {
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: absolute;
+    width: 100vw;
+    height: 120vh;
+    left: 0px;
+    top: 0px;
+    background: url('../../img/6.jpg') #652b9180;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background: rgba(101, 43, 145, 0.5); */
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 50vw #652b9180;
+  }
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    height: 130vh;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
+  }
+  .header_text {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+  }
+  .header_input {
+    /* position: absolute; */
+    width: 578px;
+    height: 75px;
+    font-size: 20px;
+    padding: 20px;
+    /* left: 221px;
+  top: 443px; */
+
+    background: #ffffff;
+  }
+  .header_btn {
+    width: 277px;
+    height: 75px;
+    font-size: 30px;
+    background: #652b91;
+  }
+}
