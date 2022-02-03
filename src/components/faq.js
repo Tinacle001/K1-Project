@@ -2,7 +2,7 @@ const faq = [
   { id: 1, question: 'What is K1 the Ultimate Music Empire  ?', answer: '' },
   {
     id: 2,
-    question: 'Hom much does K1 the Ultimate Music Empire cost ?',
+    question: 'How much does K1 the Ultimate Music Empire cost ?',
     answer: '',
   },
   { id: 3, question: 'Where can i watch?', answer: '' },
