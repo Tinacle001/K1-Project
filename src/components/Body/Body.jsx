@@ -1,34 +1,43 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Body.css'
 import phone from '../../img/phone.png'
 import faq from '../faq'
+import ayinde from '../../img/ayinde.jpg'
+
+import { Link } from 'react-router-dom'
 const Body = () => {
-  // const [faq, setFaq] = useState(initialState)
   return (
     <main className=''>
-      <section className='section_one grid grid-cols-2 gap-4 '>
-        <div className='section_one_content col-span-1'>
-          <h3>Enjoy on your TV.</h3>
-          <p>
+      <section className='section_one md:grid   md:grid-cols-2 md:gap-4 '>
+        <div className='section_one_content md:col-span-1'>
+          <h3 className='text-center'>Enjoy on your TV.</h3>
+          <p className='text-center md:text-justify'>
             Watch on Smart TVs,Playstation,XBox, Chromecast, Apple TV, Blue-ray
             players, and more.
           </p>
         </div>
-        <div className='section_one_img col-span-1'></div>
+        <div className='section_one_img_cont md:col-span-1'>
+          <div className='section_one_img hidden md:block'></div>
+          <img
+            src={ayinde}
+            className='section_one_img block md:hidden'
+            alt=''
+          />
+        </div>
       </section>
       {/* end of section one */}
-      <section className='section_two grid grid-cols-3 gap-3 '>
-        <div className='section_two_img col-span-1 ml-36'>
-          <img src={phone} alt='download-app' />
+      <section className='section_two md:grid md:grid-cols-3 gap-3 '>
+        <div className='section_two_img md:col-span-1 md:ml-36'>
+          <img src={phone} alt='download-app' className='phone_img' />
         </div>
-        <div className='section_two_content col-span-2 ml-28'>
+        <div className='section_two_content md:col-span-2 md:ml-28'>
           <h3>Download your musics shows to watch offline.</h3>
           <p>Save your favorites easily and always have something to watch.</p>
         </div>
       </section>
       <section className='section_three '>
         <div className='section_three_content'>
-          <h1 className='mb-20'>Top Live Videos</h1>
+          <h1 className='mb-15'>Top Live Videos</h1>
           <p className='section_three_text'>
             Discover videos and musics starring your favorite K1.
           </p>
@@ -40,7 +49,7 @@ const Body = () => {
             />
             <button className='section_three_btn'>Start Watching</button>
           </form>
-          <p>Cancel anytime</p>
+          <p className='mb-12'>Cancel anytime</p>
         </div>
       </section>
       {/* end of section three */}
@@ -52,21 +61,21 @@ const Body = () => {
             laptop, and TV.
           </p>
         </div>
-        <div className='device_image grid md:grid-cols-3 gap-5 mx-auto'>
-          <div className='col-span-1 mx-auto md:mt-20'>
+        <div className='device_image grid md:grid-cols-3 md:gap-5 mx-auto'>
+          <div className='md:col-span-1 mx-auto md:mt-20'>
             <div className='mobile mx-auto'></div>
             <p className='device_name text-center'>Mobile & Tablet</p>
             <p className='example_text'> Android</p>
             <p className='example_text'> Tablet</p>
           </div>
-          <div className='col-span-1 mx-auto md:mt-10'>
+          <div className='md:col-span-1 mx-auto md:mt-10'>
             <div className='computer'></div>
             <div className='computer_line'></div>
             <p className='device_name text-center'>computer</p>
             <p className='example_text'> Chrome OS</p>
             <p className='example_text'> Window OS</p>
           </div>
-          <div className='col-span-1 mx-auto'>
+          <div className='md:col-span-1 mx-auto'>
             <div className='tv'></div>
             <div className='tv_line mx-auto'></div>
             <p className='device_name text-center'>TV</p>

@@ -5,4 +5,10 @@ body {
 .app {
   background-color: #111;
   color: #fff;
+  /* overflow: hidden; */
+}
+@media only screen and (max-width: 600px) {
+  .app {
+    /* overflow: hidden; */
+  }
 }
