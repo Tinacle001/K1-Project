@@ -1,5 +1,5 @@
 {
-  "homepage": "http://femmyte.github.io/k1-de-ultimate",
+  "homepage": "http://tinacle001.github.io/K1-Project/",
   "name": "k1-de-ultimate",
   "version": "0.1.0",
   "private": true,
@@ -9,11 +9,16 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.1.3",
     "gh-pages": "^3.2.3",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.26.0",
+    "react-phone-number-input": "^3.1.46",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "responsive-navbar-react": "^1.2.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

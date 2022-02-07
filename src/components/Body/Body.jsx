@@ -47,7 +47,9 @@ const Body = () => {
               className='section_three_input'
               placeholder='Email address'
             />
+            <Link to='/signup'>
             <button className='section_three_btn'>Start Watching</button>
+            </Link>
           </form>
           <p className='mb-12'>Cancel anytime</p>
         </div>

@@ -5,7 +5,8 @@
   height: 110vh;
   /* left: 0px;
   top: 707px; */
-  background: rgba(101, 43, 145, 0.92);
+  /* background: rgba(101, 43, 145, 0.92); */
+  background-color: #652b91;
 }
 .section_one_content {
   display: flex;
