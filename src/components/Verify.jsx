@@ -21,7 +21,9 @@ const PageTwo = () => {
             <p className='welcome_text_two'>
               You can now explore and enjoy K1 Music Empire
             </p>
-            <button className='welcome_btn uppercase'>Enter</button>
+            <Link to='/home'>
+              <button className='welcome_btn uppercase'>Enter</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .signup {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background: rgba(101, 43, 145, 0.5);
   background-image: url('../../img/2.jpg');
   background-repeat: no-repeat;
@@ -16,10 +16,12 @@
 }
 .signup_container {
   width: 40vw;
-  height: 80vh;
+  /* height: 100vh; */
+  /* height: 200px; */
   margin: auto;
   background: rgba(101, 43, 145, 0.86);
   border-radius: 8px;
+  padding-bottom: 2em;
 }
 .signup_box {
   width: 70%;
@@ -33,17 +35,22 @@
 .signup_input {
   margin-top: 0.5em;
   width: 100%;
-  height: 50px;
+  height: 40px;
   margin-bottom: 20px;
-  background: rgba(196, 196, 196, 0.5);
+  background: rgba(196, 196, 196, 0.5) !important;
   border-radius: 8px;
   padding: 10px;
   font-style: normal;
   font-weight: 300;
-  font-size: 25px;
-  line-height: 29px;
-
+  font-size: 20px;
+  line-height: 20px;
+  /* text-outline: 0 0 #000; */
   color: rgba(255, 255, 255, 0.8);
+  outline-style: none;
+}
+PhoneInput {
+  background-color: black !important;
+  color: black !important;
 }
 .signup_btn {
   width: 100%;
@@ -68,6 +75,7 @@
 .extra {
   width: 70%;
   margin: auto;
+  margin-bottom: 2em;
 }
 .extraone {
   margin-top: 1.5em;
@@ -110,4 +118,29 @@
   .signup_text {
     margin-top: 3rem;
   }
+}
+
+.signtwo {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  /* background: rgba(101, 43, 145, 0.5);
+  background-image: url('../../img/2.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  box-shadow: inset 0 0 0 50vw #652b9180; */
+}
+.logo {
+  padding-bottom: 2%;
+}
+
+.signup_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
