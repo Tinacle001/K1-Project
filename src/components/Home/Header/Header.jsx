@@ -7,15 +7,16 @@ import { Link } from 'react-router-dom'
 import SweetNav from '../Nav/SweetNav'
 const Header = () => {
   return (
-    <header clasName='home_header'>
+    <>
+      {/* // <section clasName='home_header'> */}
       {/* <div className='pt-10 mx-3 md:mx-12 flex justify-between '>
         <img src={logo} alt='logo' />
         <Link to='/signin' className='header_sign_btn'>
           <button>Sign In</button>
         </Link>
       </div> */}
-      <SweetNav />
-      <div className='header_uo'>
+      <div className='home_header'>
+        <SweetNav />
         <div className='home_header_content'>
           <p className='home_header_text'>ADE ORI OKIN</p>
 
@@ -31,16 +32,17 @@ const Header = () => {
           <div className='buttons'>
             <button className='play_btn'>
               <PlayArrow className='home_header_icon' fontSize='large' />
-              <span className='ml-2'>Play</span>
+              <label className=''>Play</label>
             </button>
             <button className='info_btn'>
               <InfoRounded className='home_header_icon' fontSize='large' />
-              <span className='ml-2'>More Info</span>
+              <span className=''>More Info</span>
             </button>
           </div>
         </div>
       </div>
-    </header>
+      {/* </section> */}
+    </>
   )
 }
 

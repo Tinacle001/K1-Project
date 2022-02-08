@@ -47,9 +47,9 @@ const SweetNav = () => {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link eventKey={2} href='#memes'>
+              {/* <Nav.Link eventKey={2} href='#memes'>
                 Dank memes
-              </Nav.Link>
+              </Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

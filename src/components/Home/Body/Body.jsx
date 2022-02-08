@@ -1,9 +1,10 @@
 import React from 'react'
 import Poster from '../Posters/Poster'
+import './Body.css'
 const Body = () => {
   return (
     <div>
-      <Poster title={'Trend Now'} isLarge />
+      <Poster title={'Trending Now'} isLarge />
       <Poster title={'Continue Playing'} />
       <Poster title={'Recommended music videos'} />
       <Poster title={'New releases'} />

@@ -35,20 +35,21 @@ const Body = () => {
           <p>Save your favorites easily and always have something to watch.</p>
         </div>
       </section>
+      {/* end of section two */}
       <section className='section_three '>
         <div className='section_three_content'>
-          <h1 className='mb-15'>Top Live Videos</h1>
+          <h1 className='md:mb-15'>Top Live Videos</h1>
           <p className='section_three_text'>
             Discover videos and musics starring your favorite K1.
           </p>
-          <form>
+          <form className='section_three_form'>
             <input
               type='email'
               className='section_three_input'
               placeholder='Email address'
             />
             <Link to='/signup'>
-            <button className='section_three_btn'>Start Watching</button>
+              <button className='section_three_btn'>Start Watching</button>
             </Link>
           </form>
           <p className='mb-12'>Cancel anytime</p>

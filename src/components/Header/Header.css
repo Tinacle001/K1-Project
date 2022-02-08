@@ -1,4 +1,4 @@
-header {
+.header {
   /* position: absolute; */
   width: 1350px;
   height: 707px;
@@ -58,6 +58,7 @@ header {
   height: 75px;
   font-size: 25px;
   background: #652b91;
+  color: #ffffff;
   /* background: rgba(101, 43, 145, 0.92); */
 }
 .header_icon {
@@ -65,7 +66,7 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
+  .header {
     /* position: relative; */
     width: 100vw;
     /* height: 100vh; */
@@ -81,10 +82,19 @@ header {
   .header_content {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    height: 40vh;
     align-items: center;
     justify-content: center;
     /* row-gap: 40px; */
+    margin-top: 50%;
+  }
+  .header_form {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .header_text {
     font-size: 18px;
@@ -93,14 +103,16 @@ header {
     line-height: 21px;
     letter-spacing: 0.05em;
     text-align: center;
+    align-self: center;
+    justify-self: center;
   }
   .header_input {
-    /* position: absolute; */
-    width: 50vw;
+    width: 80vw;
     height: 40px;
     font-size: 15px;
     padding: 10px;
     background: #ffffff;
+    border-radius: 0.5em;
   }
   .header_up {
     height: 100%;
@@ -110,10 +122,14 @@ header {
     align-items: center;
   }
   .header_btn {
-    width: 40vw;
-    height: 40px;
+    width: 56vw;
+    height: 3em;
     font-size: 19px;
     background: #652b91;
+    margin-top: 1em;
+    padding: 0 0.5em;
+    border-radius: 0.5em;
+    color: #ffffff;
     /* background: rgba(101, 43, 145, 0.92); */
   }
 }

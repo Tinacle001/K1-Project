@@ -6,8 +6,8 @@ import { ChevronRightRounded } from '@material-ui/icons'
 import { Link } from 'react-router-dom'
 const Header = () => {
   return (
-    <header>
-      <div className='pt-10 mx-3 md:mx-12 flex justify-between '>
+    <header className='header'>
+      <div className='pt-6 md:pt-10 mx-3 md:mx-12 flex justify-between '>
         <img src={logo} alt='logo' />
         <Link to='/signin' className='header_sign_btn'>
           <button>Sign In</button>
@@ -18,16 +18,18 @@ const Header = () => {
           <p className='header_text'>
             Watch k1 the Ultimate musics from Inception to date
           </p>
-          <form>
+          <form className='header_form'>
             <input
               type='email'
               className='header_input'
               placeholder='Email address'
             />
-            <button className='header_btn'>
-              <span className='mr-2'>Get Started</span>
-              <ChevronRightRounded className='header_icon' fontSize='large' />
-            </button>
+            <Link to='/signin' className=''>
+              <button className='header_btn'>
+                <span className='mr-2'>Get Started</span>
+                <ChevronRightRounded className='header_icon' fontSize='large' />
+              </button>
+            </Link>
           </form>
         </div>
       </div>

@@ -1,6 +1,7 @@
 .row {
   /* color: #fff; */
   margin-left: 20px;
+  /* background: black; */
 }
 .title {
   font-style: normal;
@@ -35,4 +36,10 @@
 }
 .large-row-poster:hover {
   transform: scale(1.09);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+  }
 }

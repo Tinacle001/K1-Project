@@ -1,3 +1,6 @@
+.section_three_btn {
+  color: #ffffff;
+}
 .section_one {
   position: relative;
   width: 1350px;
@@ -310,25 +313,34 @@
     width: 100vw;
     height: 100vh;
     background: rgba(101, 43, 145, 0.92);
+    padding: 1em;
   }
   .section_one_content {
-    padding-top: 2em;
-    margin-bottom: 2em;
+    margin-left: 0;
+    /* width: 100%; */
+    /* padding-top: 2em;
+    margin-bottom: 1em; */
+  }
+  .section_one_content p {
+    font-size: 1.4em;
+    margin-top: 0.5em;
   }
   .section_one_img_cont {
+    margin-left: 0;
     height: 80%;
   }
   .section_one_img {
-    margin-bottom: 20px;
-    width: 260px;
-    height: 260px;
+    margin-bottom: 2em;
+    width: 12em;
+    height: 12em;
     /* margin: 60px; */
     /* background: url('../../img/ayinde.jpg'); */
     border-radius: 100%;
   }
   .section_two {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
+    height: auto;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -360,7 +372,6 @@
     color: #652b91;
   }
   .section_three {
-    /* position: relative; */
     width: 100vw;
     height: 100vh;
     background: url('../../img/3.jpg') rgba(101, 43, 145, 0.5);
@@ -368,17 +379,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background: rgba(101, 43, 145, 0.5); */
     background-blend-mode: overlay;
     /* box-shadow: inset 0 0 0 50vw #652b91; */
   }
   .section_three_content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
-    row-gap: 40px;
+    /* row-gap: 40px; */
   }
   .section_three_text {
     font-size: 2em;
@@ -387,41 +397,47 @@
     line-height: 18px;
     letter-spacing: 0.05em;
   }
+  .section_three_form {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .section_three_input {
     /* position: absolute; */
-    width: 50vw;
+    width: 80vw;
     height: 40px;
     font-size: 15px;
     padding: 10px;
     /* left: 221px;
   top: 443px; */
-
+    border-radius: 0.5em;
     background: #ffffff;
   }
   .section_three_btn {
-    width: 40vw;
+    width: 50vw;
     height: 40px;
     font-size: 19px;
     background: #652b91;
-  }
-  .section_three_icon {
-    font-size: 35px;
+    margin-top: 1em;
+    color: white;
   }
   .section_three h1 {
     font-style: normal;
     font-weight: bold;
-    font-size: 3em;
-    line-height: 12px;
+    font-size: 2em;
+    line-height: 1.1em;
     /* identical to box height */
-
     letter-spacing: 0.05em;
-
+    margin-top: 3em;
     color: #ffffff;
   }
   .section_three p {
     font-style: normal;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 28px;
     letter-spacing: 0.05em;
     text-align: center;
@@ -429,7 +445,8 @@
   }
   .device {
     width: 100vw;
-    height: 130vh;
+    /* height: 130vh; */
+    height: auto;
     display: flex;
     flex-direction: column;
     background: #ffffff;
@@ -437,6 +454,8 @@
     justify-content: center;
     border-bottom: 1px solid #652b91;
     padding-bottom: 1rem;
+    /* padding-top: 1rem; */
+    overflow: hidden;
   }
   .device_content {
     width: 70vw;
@@ -564,12 +583,8 @@
     color: #652b91;
   }
   .faq_item {
-    /* position: absolute; */
     width: 100%;
-    height: 4.5em;
-    /* left: 160px;
-    top: 3281px; */
-
+    height: auto;
     background: #652b91;
     border-radius: 10px;
     margin-top: 2.5rem;

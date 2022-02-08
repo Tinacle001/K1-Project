@@ -28,7 +28,9 @@ const Signin = () => {
                 className='signup_input'
                 placeholder='password'
               />
-              <button className='signup_btn'>Sign In</button>
+              <Link to='/welcome'>
+                <button className='signup_btn'>Sign In</button>
+              </Link>
             </form>
           </div>
           {/* end signup box */}
