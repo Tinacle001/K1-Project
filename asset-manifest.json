@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/K1-Project/static/css/main.3f83a310.css",
-    "main.js": "/K1-Project/static/js/main.6dc3a526.js",
+    "main.css": "/K1-Project/static/css/main.bbb46f5d.css",
+    "main.js": "/K1-Project/static/js/main.164c561e.js",
     "static/media/2.jpg": "/K1-Project/static/media/2.371315ebd427f83afadc.jpg",
     "static/media/4.png": "/K1-Project/static/media/4.6af44f3a278e39352ef9.png",
     "static/media/7.jpg": "/K1-Project/static/media/7.441ba20df0c8e7f22558.jpg",
@@ -11,11 +11,11 @@
     "static/media/5.jpg": "/K1-Project/static/media/5.491b2039c3d81291fef5.jpg",
     "static/media/1.jpg": "/K1-Project/static/media/1.14ea3f8c8e9a7702d6c4.jpg",
     "index.html": "/K1-Project/index.html",
-    "main.3f83a310.css.map": "/K1-Project/static/css/main.3f83a310.css.map",
-    "main.6dc3a526.js.map": "/K1-Project/static/js/main.6dc3a526.js.map"
+    "main.bbb46f5d.css.map": "/K1-Project/static/css/main.bbb46f5d.css.map",
+    "main.164c561e.js.map": "/K1-Project/static/js/main.164c561e.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f83a310.css",
-    "static/js/main.6dc3a526.js"
+    "static/css/main.bbb46f5d.css",
+    "static/js/main.164c561e.js"
   ]
 }
