@@ -1,6 +1,7 @@
 .row {
   /* color: #fff; */
   margin-left: 20px;
+  /* background: black; */
 }
 .title {
   font-style: normal;
@@ -9,7 +10,8 @@
   line-height: 47px;
   letter-spacing: 0.04em;
 
-  color: #652b91;
+  /* color: #652b91; */
+  color: #fff;
 }
 .posters {
   display: flex;
@@ -35,4 +37,10 @@
 }
 .large-row-poster:hover {
   transform: scale(1.09);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+  }
 }

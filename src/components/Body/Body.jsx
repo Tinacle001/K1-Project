@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Body.css'
 import phone from '../../img/phone.png'
 import faq from '../faq'
 import ayinde from '../../img/ayinde.jpg'
-
+import googleplay from '../../img/googleplay.png'
+import appstore from '../../img/appstore.png'
 import { Link } from 'react-router-dom'
+import {
+  Add,
+  AddCircleOutlined,
+  Close,
+  PlusOneOutlined,
+} from '@material-ui/icons'
+import { faMinus } from '@fortawesome/free-solid-svg-icons'
 const Body = () => {
+  const [openFaq, setOpenFaq] = useState(false)
+  const [num, setNum] = useState(0)
+  const handleOpen = (id) => {
+    console.log(id)
+    setNum(id)
+    if (openFaq) {
+      setOpenFaq(false)
+    } else {
+      setOpenFaq(true)
+    }
+  }
   return (
     <main className=''>
       <section className='section_one md:grid   md:grid-cols-2 md:gap-4 '>
@@ -31,24 +50,38 @@ const Body = () => {
           <img src={phone} alt='download-app' className='phone_img' />
         </div>
         <div className='section_two_content md:col-span-2 md:ml-28'>
+          <div className='play-img-container'>
+            <img
+              src={googleplay}
+              className='googleplay-img'
+              alt='googlepay logo'
+            />
+            <img
+              src={appstore}
+              className='googleplay-img'
+              alt='appstore logo'
+            />
+          </div>
+
           <h3>Download your musics shows to watch offline.</h3>
           <p>Save your favorites easily and always have something to watch.</p>
         </div>
       </section>
+      {/* end of section two */}
       <section className='section_three '>
         <div className='section_three_content'>
-          <h1 className='mb-15'>Top Live Videos</h1>
+          <h1 className='md:mb-15'>Top Live Videos</h1>
           <p className='section_three_text'>
             Discover videos and musics starring your favorite K1.
           </p>
-          <form>
+          <form className='section_three_form'>
             <input
               type='email'
               className='section_three_input'
               placeholder='Email address'
             />
             <Link to='/signup'>
-            <button className='section_three_btn'>Start Watching</button>
+              <button className='section_three_btn'>Start Watching</button>
             </Link>
           </form>
           <p className='mb-12'>Cancel anytime</p>
@@ -91,13 +124,25 @@ const Body = () => {
           <h1>Frequently Asked Questions</h1>
           {faq.map((item) => {
             return (
-              <div className='faq_item'>
-                <p>{item.question}</p>
+              <div className='faq_items'>
+                <div className='faq_item'>
+                  <p>{item.question}</p>
+                  <button onClick={() => handleOpen(item.id)}>
+                    {openFaq && num === item.id ? <Close /> : <Add />}
+                  </button>
+                </div>
+                {openFaq && num === item.id && (
+                  <p className='faq-answer'>{item.answer} </p>
+                )}
               </div>
             )
           })}
         </div>
       </section>
+      <div className='play-img-container mt-10'>
+        <img src={googleplay} className='googleplay-img' alt='googlepay logo' />
+        <img src={appstore} className='googleplay-img' alt='appstore logo' />
+      </div>
     </main>
   )
 }
