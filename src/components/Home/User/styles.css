@@ -1,0 +1,680 @@
+.liveShow {
+  /* height: 80vh; */
+  display: flex;
+  /* justify-content: space-between; */
+  padding-top: 3em;
+  align-items: center;
+}
+.liveshow-img {
+  margin-left: 5em;
+  margin-top: 2em;
+}
+.liveshow-img + section {
+  margin-left: 4em;
+}
+.liveshow-img + section h1 {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+
+  color: #652b91;
+}
+.liveshow-img + section h1 + p {
+  font-size: 15px;
+  line-height: 18px;
+
+  letter-spacing: 0.04em;
+
+  color: rgba(119, 119, 119, 0.4);
+}
+.live_btn {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.04em;
+  color: #e82727;
+  background: #ffffff;
+  border: 2px solid #e82727;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 0.6em;
+}
+.liveshow-img > img {
+  /* width: 45em;
+  height: 32em; */
+  width: 678px;
+  height: 604px;
+}
+.liveStream {
+  width: 100vw;
+  height: 120vh;
+  background: url('../../../img/new/livstream_bg.jpeg') #652b9180;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 50vw #652b9180;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.playLineDown {
+  /* width: 100vw; */
+  margin: 0 2em 0 1em;
+  background: #ffffff;
+  border-radius: 10px;
+  height: 7px;
+}
+.playLineTop {
+  width: 40%;
+  margin: 0 2em 0 1em;
+  background: #652b91;
+  border-radius: 10px;
+  height: 7px;
+}
+.videoControls {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1em;
+  justify-content: space-between;
+  padding: 2em;
+}
+/* .volumeIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.playIcon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+.comment_container {
+  color: #652b91;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+.comment {
+}
+.comment_line_one {
+  display: flex;
+  align-items: center;
+}
+.comment_line_one .time {
+  color: #777777;
+}
+.comment_item {
+  margin-left: 6em;
+}
+.replies {
+  margin-left: 8em;
+  margin-top: 1em;
+}
+.livestreamVideo {
+}
+.comment_item p {
+  margin-top: 0;
+}
+.noLiveStream {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.videocamIcon {
+  font-size: xx-large;
+  width: 100px;
+}
+.album {
+  background: #652b91;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+.albumCard {
+  width: 352px;
+  height: 3.5em;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  color: #652b91;
+  /* justify-content: center; */
+}
+.albumCard img {
+  width: 62px;
+  /* height: 62px; */
+  border-radius: 10px 0px 0px 10px;
+}
+.albumCard-item {
+  margin-left: 0.5em;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 600;
+  padding: 0;
+  /* padding-bottom: 1em; */
+}
+.albumCard-item p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+.editProfile {
+  margin: auto;
+  margin-top: 1.5em;
+  width: 50vw;
+  color: #652b91;
+}
+.editProfileTop {
+  margin-bottom: 2em;
+}
+.editProfilebuttons > button,
+.change-btn {
+  margin-left: 2em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+  width: 100px;
+  height: 38px;
+  color: #ffffff;
+  background: #652b91;
+  border-radius: 10px;
+}
+.change-btn {
+  margin-left: 0;
+  margin-bottom: 2em;
+}
+.editProfilebuttonsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.editProfileLine {
+  width: 100%;
+  height: 2px;
+  background-color: #652b91;
+
+  /* border: 1px solid #652b91; */
+}
+.editProfileform {
+  display: flex;
+  margin-top: 7em;
+}
+.editProfileform form {
+  margin-left: 2em;
+  margin-top: 1em;
+}
+.editProfileform form input,
+.editProfileform form select {
+  background: #ffffff;
+  border: 2.10448px solid #652b91 !important;
+  box-sizing: border-box;
+  border-radius: 7.01493px;
+}
+.history {
+  width: 80vw;
+  margin: auto;
+  height: 100vh;
+}
+.history,
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 41px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+.history p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 41px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: rgba(101, 43, 145, 0.49);
+}
+.privacy {
+  background-color: #652b91;
+  padding: 3em;
+  color: #fff;
+}
+.privacy h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+.privacy-box {
+  background: #652b91;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  padding: 1.2em;
+  margin-bottom: 3em;
+}
+.privacy h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+}
+.privacy p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: justify;
+}
+.privacy .privacy-box + h4 {
+  margin: 1em 0;
+  text-decoration-line: none;
+}
+.help {
+  padding: 2em;
+}
+.help h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #652b91;
+}
+/* .help-icon {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  /* padding: 0.5em; *
+  background: rgba(101, 43, 145, 0.25);
+} */
+.searhBox {
+  color: #652b91;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 50vw;
+  height: 3em;
+  left: 211px;
+  top: 179px;
+  background: rgba(101, 43, 145, 0.23);
+  border-radius: 30px;
+  margin: auto;
+  padding: 2em;
+  margin-bottom: 2.5em;
+}
+.searhBox input {
+  width: 100%;
+  height: 3em;
+  background-color: transparent;
+  outline-style: none;
+  /* border: 0; */
+  margin-left: 1em;
+  color: #652b91;
+}
+.help h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 29px;
+  color: #652b91;
+  margin-bottom: 2em;
+}
+.help-item {
+  display: flex;
+  color: #652b91;
+  margin-top: 1em;
+}
+.help-item p {
+  margin-left: 2em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 27px;
+  color: #652b91;
+}
+.signout {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signoutBox {
+  width: 40vw;
+  /* height: 50vh; */
+  color: #fff;
+  background: #652b91;
+  padding: 3em;
+  margin: auto;
+}
+.signoutBox button {
+  width: 80%;
+  height: 2.5em;
+  margin-left: 2em;
+  background: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  color: #652b91;
+}
+.device_activation {
+  height: 80vh;
+  width: 60vw;
+  margin: auto;
+  margin-top: 3em;
+  color: #652b91;
+}
+.device_activation h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 41px;
+  letter-spacing: 0.02em;
+  color: #652b91;
+}
+.device_activation button {
+  width: 102px;
+  height: 41px;
+  left: 365px;
+  top: 431px;
+
+  background: #652b91;
+  color: #fff;
+  margin-bottom: 3em;
+}
+.device_activation input {
+  width: 274px;
+  height: 41px;
+  background: rgba(101, 43, 145, 0.17);
+  border: 2px solid #652b91;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.11);
+  color: #652b91;
+  padding: 1em;
+  margin-bottom: 3em;
+}
+.stepone,
+.steptwo {
+  margin-left: 4em;
+  display: flex;
+}
+.stepone p,
+.steptwo p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+}
+.stepone span,
+.steptwo span {
+  margin-left: 5em;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+}
+.steps ~ span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: #652b91;
+}
+.device_activation {
+  min-height: 140vh;
+}
+.device_activation h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+}
+.streaming-device {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+}
+.streaming-line {
+  width: 100%;
+  height: 0px;
+  margin-bottom: 2em;
+  border: 1px solid #652b91;
+}
+.streaming .space .date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: rgba(101, 43, 145, 0.5);
+}
+.streaming .space .ipAddress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #652b91;
+  margin: 0;
+}
+.manage-device {
+  width: 50vw;
+  margin: auto;
+  color: #652b91;
+  margin-bottom: 4em;
+}
+.manage-device h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #652b91;
+}
+.manage-device > p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+}
+.device-name {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.device-name p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+
+  color: #652b91;
+  margin-bottom: 2em;
+}
+.device-name-line {
+  width: 10em;
+  height: 0px;
+
+  border: 1px solid #652b91;
+  margin-bottom: 2em;
+}
+.device-name button,
+.manage-device-btn {
+  margin-left: 7em;
+  width: 77px;
+  height: 30.95px;
+  color: #fff;
+  background: #652b91;
+}
+.manage-device-btn {
+  margin-top: 7em;
+  margin-left: 0;
+}
+/* SMALL SCREEEN STYLES */
+@media only screen and (max-width: 600px) {
+  .comment_container {
+    color: #652b91;
+    margin-left: 0.8em;
+    margin-bottom: 2em;
+  }
+  .comment_item {
+    margin-left: 4em;
+  }
+  .replies {
+    margin-left: 4em;
+    margin-top: 1em;
+  }
+  .album-item div {
+    margin-top: 2em;
+  }
+  .albumCard {
+    width: 85%;
+    height: 5em;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #652b91;
+  }
+  .albumCard img {
+    width: 62px;
+    /* height: 80px; */
+    border-radius: 10px 0px 0px 10px;
+  }
+  .albumCard-item {
+    margin-left: 0.5em;
+    /* display: flex;
+    flex-direction: row; */
+    display: block !important;
+  }
+
+  /* EDIT PROFILE */
+  .editProfile {
+    margin: auto;
+    margin-top: 1.5em;
+    width: 80vw;
+    color: #652b91;
+  }
+  .editProfilebuttonsContainer {
+    display: block;
+    text-align: center;
+    /* justify-content: space-between;
+  align-items: center; */
+  }
+  .editProfilebuttonsContainer h1 {
+    margin-bottom: 1em;
+  }
+  .editProfilebuttons {
+    margin-bottom: 1em;
+  }
+  .searhBox {
+    color: #652b91;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 80vw;
+    height: 2.5em;
+    background: rgba(101, 43, 145, 0.23);
+    border-radius: 30px;
+    margin: auto;
+    padding: 1em;
+    margin-bottom: 1.5em;
+  }
+  .signoutBox {
+    width: 80vw;
+    /* height: 50vh; */
+    color: #fff;
+    background: #652b91;
+    padding: 2em;
+    margin: auto;
+  }
+  .signoutBox p {
+    text-align: justify;
+  }
+  .signoutBox button {
+    width: 80%;
+    height: 2em;
+    margin-left: 1em;
+    background: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+
+    color: #652b91;
+  }
+  .device_activation {
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 3em;
+    color: #652b91;
+  }
+  .stepone,
+  .steptwo {
+    margin-left: 2em;
+    display: flex;
+  }
+  .stepone span,
+  .steptwo span {
+    margin-left: 2.5em;
+  }
+}

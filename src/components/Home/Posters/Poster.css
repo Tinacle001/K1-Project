@@ -10,7 +10,8 @@
   line-height: 47px;
   letter-spacing: 0.04em;
 
-  color: #652b91;
+  /* color: #652b91; */
+  color: #fff;
 }
 .posters {
   display: flex;

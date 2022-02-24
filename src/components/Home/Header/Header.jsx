@@ -2,10 +2,13 @@ import React from 'react'
 import './Header.css'
 import logo from '../../../img/logo_new.png'
 import { InfoRounded, PlayArrow } from '@material-ui/icons'
-
+import { getUser } from '../../../utils/common'
 import { Link } from 'react-router-dom'
 import SweetNav from '../Nav/SweetNav'
+// import MyNav from '../Nav/MyNav'
+
 const Header = () => {
+  const user = getUser()
   return (
     <>
       {/* // <section clasName='home_header'> */}
@@ -17,6 +20,7 @@ const Header = () => {
       </div> */}
       <div className='home_header'>
         <SweetNav />
+        {/* <MyNav /> */}
         <div className='home_header_content'>
           <p className='home_header_text'>ADE ORI OKIN</p>
 

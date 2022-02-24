@@ -285,18 +285,35 @@
   color: #652b91;
 }
 .faq_item {
-  /* position: absolute; */
-  width: 754px;
-  height: 55px;
-  /* left: 160px;
-  top: 3281px; */
-
-  background: #652b91;
-  border-radius: 10px;
-  margin-top: 2.5rem;
+  /* width: 754px;
+  min-height: 55px; */
+  /* background: #652b91; */
+  /* border-radius: 10px;
+  margin-top: 2.5rem; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* padding-right: 2em; */
+}
+.faq_items {
+  width: 754px;
+  /* height: 55px; */
+  background: #652b91;
+  border-radius: 10px;
+  margin-top: 2.5rem;
+  padding-right: 2em;
+}
+.faq-answer {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.05em;
+  padding: 0.5rem;
+  margin-top: 0.8em;
+  color: #ffffff;
+}
+.faq-answer-close {
+  display: none;
 }
 .faq_item p {
   font-style: normal;
@@ -306,6 +323,19 @@
   letter-spacing: 0.05em;
   padding: 0.5rem;
   color: #ffffff;
+}
+.faq_item faq-times {
+  /* align-self: flex-start; */
+  margin-right: 3em;
+}
+.play-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+.googleplay-img {
+  width: 18em;
+  height: 5em;
 }
 @media only screen and (max-width: 600px) {
   .section_one {
@@ -583,13 +613,33 @@
     color: #652b91;
   }
   .faq_item {
+    /* width: 754px;
+  min-height: 55px; */
+    /* background: #652b91; */
+    /* border-radius: 10px;
+  margin-top: 2.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: 2em; */
+  }
+  .faq_items {
+    width: 100%;
+    /* height: 55px; */
+    background: #652b91;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    padding: 1em;
+  }
+
+  /* .faq_item {
     width: 100%;
     height: auto;
     background: #652b91;
     border-radius: 10px;
     margin-top: 2.5rem;
     padding: 1em;
-  }
+  } */
   .faq_item p {
     font-style: normal;
     font-weight: bold;
@@ -598,5 +648,14 @@
     letter-spacing: 0.05em;
     padding: 0.5em;
     color: #ffffff;
+  }
+  .play-img-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+  .googleplay-img {
+    width: 13em;
+    height: 4em;
   }
 }
